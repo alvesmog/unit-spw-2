@@ -35,6 +35,9 @@ public class Funcionario {
 		v.cliente = cliente;
 		v.funcionario = f;
 		
+		System.out.printf("Produto vendido: " + v.produto);
+		
+		
 	}
 	
 }

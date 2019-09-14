@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Fornecedor {
 	protected String nome;
-	private String cnpj;
+	protected String cnpj;
 	
 	public static ArrayList<Fornecedor> fornecedores = new ArrayList<Fornecedor>();
 	
