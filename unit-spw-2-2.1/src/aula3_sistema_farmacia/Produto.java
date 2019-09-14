@@ -18,7 +18,7 @@ public class Produto {
 	
 	ArrayList<Produto> produtos = new ArrayList<Produto>();
 	
-	void cadastrarProduto(float preco, float estoque, String descricao, String tipo, String validade) {
+	void cadastrarProduto(float preco, float estoque, String descricao, String tipo, String validade, Fornecedor fornecedor) {
 		
 		Produto p = new Produto();
 		p.preco = preco;
@@ -26,6 +26,7 @@ public class Produto {
 		p.descricao = descricao;
 		p.tipo = tipo;
 		p.validade = validade;
+		p.fornecedor = fornecedor;
 		
 		produtos.add(p);
 	}
