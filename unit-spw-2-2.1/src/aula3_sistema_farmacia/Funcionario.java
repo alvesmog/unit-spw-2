@@ -26,4 +26,15 @@ public class Funcionario {
 		
 	}
 	
+	void realizarVenda(String produto, String cliente, String funcionario, float preco) {
+		
+		Funcionario f  = new Funcionario();
+		
+		Venda v = new Venda();
+		v.produto = produto;
+		v.cliente = cliente;
+		v.funcionario = f;
+		
+	}
+	
 }
