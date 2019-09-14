@@ -7,7 +7,7 @@ public class Disciplina {
 	private ArrayList<Aluno> alunos = new ArrayList<Aluno>();
 	int QTD_MAX_ALUNOS = 30;
 	
-	void adicionarAluno(Aluno matricula) {
-		alunos.add(matricula);
+	void adicionarAluno(Aluno aluno) {
+		alunos.add(aluno);
 	}
 }
