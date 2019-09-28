@@ -1,38 +1,33 @@
 package exercicio_petshop;
 
+import java.util.Scanner;
+
+
 public class Main {
 
 	public static void main(String[] args) {
 		
-		Animal a = new Animal();
-		Cachorro c = new Cachorro();
-		c.nome = "tobby";
-		c.qtdPatas = 4;
-		Gato g = new Gato();
-		g.nome="bruce";
-		g.qtdPatas = 4;
-		Passaro p = new Passaro();
-		p.nome="piu-piu";
-		p.qtdPatas = 2;
+		Scanner s = new Scanner(System.in);
+		ColecaoDeAnimais colecaoDeAnimais = new ColecaoDeAnimais();
 		
-		c.comunicar();
-		g.comunicar();
-//		g.comer();
-		p.comunicar();
+		System.out.println("Escolha o tipo de animal: ");
+		int tipo = s.nextInt();
 		
-		ColecaoDeAnimais colecao = new ColecaoDeAnimais();
+		if (tipo == 1) {
+			
+			Cachorro c = new Cachorro();
+			
+			System.out.println("Digite o nome do cachorro:");
+			c.nome = s.next();
+			
+			System.out.println("Quantas patas?");
+			c.qtdPatas = s.nextInt();
+			
+			colecaoDeAnimais.adicionar(c);
+			
+		}
 		
-		colecao.adicionar(c);
-		colecao.adicionar(g);
-		colecao.adicionar(p);
 		
-		colecao.listar();
-		
-		colecao.remover(c);
-		colecao.remover(g);
-		colecao.listar();
-		
-
 		
 	}
 

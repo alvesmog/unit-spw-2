@@ -17,6 +17,7 @@ public class ColecaoDeAnimais {
 	void adicionar(Animal a) {
 		listaTodosAnimais.add(a);
 		System.out.println(a.nome + " adicionado na lista...");
+		System.out.println(listaTodosAnimais.size());
 	}
 	
 	void remover(Animal a) {
