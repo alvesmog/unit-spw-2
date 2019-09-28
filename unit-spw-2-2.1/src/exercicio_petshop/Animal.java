@@ -2,6 +2,7 @@ package exercicio_petshop;
 
 public class Animal {
 	
+	String especie;
 	String raca;
 	String nome;
 	int idade;
