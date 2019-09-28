@@ -15,11 +15,13 @@ public class Main {
 				System.out.println(ColecaoDeEspecies.especies.get(i).nome);
 			}
 		} else {
+			
 			System.out.println("Lista de especies vazia!");
 			System.out.println("Deseja adicionar uma nova espécie?");
 			System.out.println("[S] / [N]");
 			String opcao;
 			opcao = s.next();
+
 			if (opcao == "S" || opcao == "s") {
 
 				while (opcao == "S" || opcao == "s") {
