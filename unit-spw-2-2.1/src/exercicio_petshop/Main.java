@@ -22,9 +22,9 @@ public class Main {
 			String opcao;
 			opcao = s.next();
 
-			if (opcao == "S" || opcao == "s") {
+			if (opcao.equals("S") || opcao.equals("s")) {
 
-				while (opcao == "S" || opcao == "s") {
+				while (opcao.equals("S") || opcao.equals("s")) {
 					System.out.println("Digite o nome da espécie");
 					String nomeEspecie = s.next();
 					Especie e = new Especie(nomeEspecie);
@@ -34,7 +34,7 @@ public class Main {
 					opcao = s.next();
 				}
 
-			} else if (opcao == "N" || opcao == "n") {
+			} else if (opcao.equals("N") || opcao.equals("n")) {
 				System.out.println("Programa encerrado");
 			}
 		}
