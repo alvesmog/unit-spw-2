@@ -8,9 +8,10 @@ public class Animal extends Especie {
 	int qtdPatas;
 	float peso;
 	
-	Animal(String especie, String nome){
+	Animal(String especie, String nome, int qtdPatas){
 		super(especie);
 		this.nome = nome;
+		this.qtdPatas = qtdPatas;
 	}
 	
 	
