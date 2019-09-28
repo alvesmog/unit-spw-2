@@ -5,7 +5,7 @@ public class Farmacia {
 	public static void main(String[] args) {
 		
 		System.out.println("-----------------------------------------------------------------");
-		System.out.println("DADOS DE CADASTRO:");
+		System.out.println("			DADOS DE CADASTRO:");
 		System.out.println("-----------------------------------------------------------------");
 		
 		//Cadastrar fornecedor
@@ -22,23 +22,34 @@ public class Farmacia {
 		//Cadastrar produto
 		Produto p = new Produto();
 		p.cadastrarProduto(10, 11, "agua", "1", "01/01/2010", f);
+		p.cadastrarProduto(10, 11, "café", "1", "01/01/2010", f);
 		
 		System.out.println("Produtos cadastrados: ");
-		System.out.println("-	" + Produto.produtos.get(0).descricao);
-		
+		for (int i=0; i<=Produto.produtos.size()-1;i++) {
+			System.out.println("-	" + Produto.produtos.get(i).descricao);
+		}
+
 		
 		//Cadastrar funcionario
 		Funcionario func = new Funcionario();
 		func.cadastrarFuncionario("Fulano", 0, "fulanologin", "fulano123");
 		
+		System.out.println("Funcionários cadastrados: ");
+		for (int i=0;i<=Funcionario.funcionarios.size();i++) {
+			
+		}
+		
+		
+		
 		//Cadastrar cliente
 		Cliente c = new Cliente();
 		c.cadastrarCliente("Sicrado", "111.111.111-11");
+		System.out.println("Clientes cadastrados: ");
 		
 		//Vender
 		System.out.println("");
 		System.out.println("-----------------------------------------------------------------");
-		System.out.println("DADOS DE VENDA:");
+		System.out.println("			DADOS DE VENDA:");
 		System.out.println("-----------------------------------------------------------------");
 	
 		func.realizarVenda("agua", "carol", "guilherme", 11);

@@ -12,7 +12,7 @@ public class Funcionario {
 	String usuario; //Geralmente é o cpf, matricula, etc
 	String senha;
 	
-	ArrayList<Funcionario> funcionarios = new ArrayList<Funcionario>();
+	static ArrayList<Funcionario> funcionarios = new ArrayList<Funcionario>();
 	
 	void cadastrarFuncionario(String nome, int cargo, String usuario, String senha) {
 		
