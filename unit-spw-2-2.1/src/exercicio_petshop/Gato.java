@@ -6,7 +6,7 @@ public class Gato extends Animal {
 		
 		especie = "Gato";
 		this.nome = nome;
-		qtdPatas = qtdPatas;
+		this.qtdPatas = qtdPatas;
 		
 	}
 	

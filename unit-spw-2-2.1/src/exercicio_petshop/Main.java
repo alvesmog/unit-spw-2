@@ -1,7 +1,5 @@
 package exercicio_petshop;
-
 import java.util.Scanner;
-
 
 public class Main {
 
@@ -14,9 +12,37 @@ public class Main {
 		
 		while (i == 0) {
 			
-			System.out.println("Escolha o tipo de animal: ");
-			System.out.println("1-Cachorro / 2-Gato / 3-Pássaro");
+			System.out.println("Escolha o tipo de animal da lista abaixo: ");
 			
+			if (ColecaoDeEspecies.especies.size()>0) {
+				for (i=0;i<ColecaoDeEspecies.especies.size();i++) {
+					System.out.println(ColecaoDeEspecies.especies.get(i).nome);
+				} 
+			} else {
+				System.out.println("Lista de especies vazia!");
+				System.out.println("Deseja adicionar uma nova espécie?");
+				System.out.println("[S] / [N]");
+				String opcao;
+				opcao = s.next();
+				if (opcao == "S" || opcao == "s") {
+					
+					while (opcao == "S" || opcao == "s") {
+					System.out.println("Digite o nome da espécie");
+					String nomeEspecie = s.next();
+					Especie e = new Especie(nomeEspecie);
+					ColecaoDeEspecies.adicionar(e);
+					System.out.println("Deseja adicionar uma nova espécie?");
+					System.out.println("[S] / [N]");
+					opcao = s.next();
+					}
+					
+				} else if (opcao == "N" || opcao == "n") {
+					System.out.println("Programa encerrado");
+				}
+			}
+			
+			System.out.println(ColecaoDeEspecies.especies.get(i).nome);
+
 			int tipo = s.nextInt();
 			
 			if (tipo == 1) {

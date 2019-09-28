@@ -1,13 +1,17 @@
 package exercicio_petshop;
 
-public class Animal {
-	
-	String especie;
+public class Animal extends Especie {
+
 	String raca;
 	String nome;
 	int idade;
 	int qtdPatas;
 	float peso;
+	
+	Animal(String especie, String nome){
+		super(especie);
+		this.nome = nome;
+	}
 	
 	
 	void comunicar(){
